@@ -5,11 +5,14 @@
 //The formula is C*(9/5)+32
 //It must return a number
 
-function celsiusToFahrenheit(celsius){
-    
-    //The formula is C*(9/5)+32
+document.querySelector("h1").addEventListener('click', celsiusToFahrenheit)
 
+function celsiusToFahrenheit(celsius){
+    let temp = Number(document.querySelector('input').value)
+    //The formula is C*(9/5)+32
+    temp = temp * 1.8 + 32
     //It must return a number
+    document.querySelector("h2").innerText = temp
 }
 
 celsiusToFahrenheit(-40) //-40
